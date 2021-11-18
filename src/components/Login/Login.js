@@ -10,7 +10,7 @@ const emailReducer = (state, action) => {
   if (action.type == 'USER_BLUR') {
     return { value: state.value, isValid: state.value.includes('@') };
   }
-  return { value: '', isValid: false };
+  return { value: '', isValid: false }; 
 };
 
 const passwordReducer = (state, action) => {
